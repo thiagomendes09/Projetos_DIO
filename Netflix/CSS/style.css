@@ -1,0 +1,106 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+* { /*Reset CSS*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: #FFF;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav {
+    margin-right: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+header nav a:hover {
+    color: #FFF;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+/*Filme selecionado*/
+
+.main-movie {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../IMG/bojack-fundo.jpg);
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .container {
+    width: 60%;
+}
+
+.main-movie .title {
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+
+.main-movie .abstract {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.button {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.button i {
+    margin-right: 7px;
+}
+
+.button:hover {
+    background-color: #F4F6F6;
+    color: black;
+}
+
+/*Carousel*/
+
+.box-movie {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-movies {
+    margin-top: 10px;
+}
